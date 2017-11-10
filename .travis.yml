@@ -4,6 +4,9 @@ matrix:
       os: osx
       osx_image: xcode9.1
       before_install:
-          - brew update
-          - brew install node
-          - npm install -g react-native-cli 
+        - brew update
+        - brew upgrade node
+        - npm install -g react-native-cli
+    - language: android
+      os: linux
+      jdk: oraclejdk7
