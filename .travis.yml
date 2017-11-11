@@ -9,6 +9,7 @@ matrix:
     - npm install -g react-native-cli
     install:
     - npm install
+    - react-native run-ios --configuration Release
   - language: android
     jdk: oraclejdk8
     android:
