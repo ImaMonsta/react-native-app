@@ -17,7 +17,7 @@ matrix:
 
       android:
         components:
-          - uild-tools-23.0.1
+          - build-tools-23.0.1
           - android-23
       
       before_install:
