@@ -10,7 +10,7 @@ matrix:
         - npm install -g react-native-cli
         
       install:
-        - react-native build-ios
+        - npm install
         
     - language: android
       jdk: oraclejdk7
@@ -24,7 +24,8 @@ matrix:
         - npm install -g react-native-cli
       
       install:
-        - react-native build-android
+        - npm install
+        - cd android && ./gradlew assembleRelease
         
       script:
           - echo "Travis branch is $TRAVIS_BRANCH"
