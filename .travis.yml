@@ -15,7 +15,7 @@ matrix:
     install:
     - npm install
     - react-native run-ios --configuration Release
-    - xcodebuild -scheme "ReactNativeApp" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 8"
+    - cd ios && xcodebuild -scheme "ReactNativeApp" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 8"
   - language: android
     jdk: oraclejdk8
     android:
