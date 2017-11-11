@@ -17,6 +17,7 @@ matrix:
     install:
     - npm install
     - react-native run-ios --configuration Release
+    - pod install
   - language: android
     jdk: oraclejdk8
     android:
