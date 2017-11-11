@@ -6,6 +6,8 @@ branches:
 matrix:
   include:
   - language: objective-c
+    xcode_project: ios/ReactNativeApp.xcodeproj # path to your xcodeproj folder
+    xcode_scheme: ReactNativeApp
     os: osx
     osx_image: xcode9.1
     before_install:
