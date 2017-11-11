@@ -24,10 +24,10 @@ matrix:
     script:
     - echo "Travis branch is $TRAVIS_BRANCH"
     - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
-deploy:
-  provider: releases
-  api_key:
-    secure: Nfr/RfihoA5gLR5LBDWYM25HX6Zm03W9XQOFasaqyv656C8azSixz25DmBHNBh3j0D5spQjURK4Y5JJFiJtzq7q6q6OP0vXjLiIrX8glD88K+dJ+ZdKTJeesAH3Fe4TZHQQJBmsi6Nqlc82jN5n5g9sA/LpZ1UVHEe8lCt2BTR5Sl1GBWrZuSH2XFJEYg43+TkqMzMuWCbNh7W7xu6vfkpkJmcppZlZHzS4zBEOIDhb8CODFVitFyRPoLDKrSawsCvs5/1Ffnx2azvOfPiXatXA0/EcFc8FhfISuOXIypUrCjfJO/u2TR+p20hPYuyT9Q+Gl+KfHLz4DCB/XDBuUNpQl6ioN1hjKZYfeiydMmsWny0uzM2DUi4V2Uf+QumWtLfd3kT5jFAb84HSAEWAOjbjl7Q8FY7cpG0aJzV3UU6GXGZyLYUyTd1ErAiMaFSlaDrbXLOyULfjTHZOjD5kslNGMPF1saCmEkACEm1V9+R0uJvHgK1RWFfF44WIcbZUeRTIlzAYImJ42qVkDAfhhoQ2yT0e0gv88YyLlSMC6fhuT0mjOm0vyytCqk43apVOMsYctKNhNu4Mr8X75d7pXfNxW4J9UzU2QvHbRNfuB9uuOjU9y4SLvpAA4ZxpFSFqpb9m2wyadiX1etSYLMn6LoByRR/HZJIF39ZhyRBhDjfs=
-  file: "$TRAVIS_BUILD_DIR/android/app/build/outputs/apk/app-release-unsigned.apk"
-  on:
-    repo: ImaMonsta/react-native-app
+    deploy:
+      provider: releases
+      api_key:
+        secure: Nfr/RfihoA5gLR5LBDWYM25HX6Zm03W9XQOFasaqyv656C8azSixz25DmBHNBh3j0D5spQjURK4Y5JJFiJtzq7q6q6OP0vXjLiIrX8glD88K+dJ+ZdKTJeesAH3Fe4TZHQQJBmsi6Nqlc82jN5n5g9sA/LpZ1UVHEe8lCt2BTR5Sl1GBWrZuSH2XFJEYg43+TkqMzMuWCbNh7W7xu6vfkpkJmcppZlZHzS4zBEOIDhb8CODFVitFyRPoLDKrSawsCvs5/1Ffnx2azvOfPiXatXA0/EcFc8FhfISuOXIypUrCjfJO/u2TR+p20hPYuyT9Q+Gl+KfHLz4DCB/XDBuUNpQl6ioN1hjKZYfeiydMmsWny0uzM2DUi4V2Uf+QumWtLfd3kT5jFAb84HSAEWAOjbjl7Q8FY7cpG0aJzV3UU6GXGZyLYUyTd1ErAiMaFSlaDrbXLOyULfjTHZOjD5kslNGMPF1saCmEkACEm1V9+R0uJvHgK1RWFfF44WIcbZUeRTIlzAYImJ42qVkDAfhhoQ2yT0e0gv88YyLlSMC6fhuT0mjOm0vyytCqk43apVOMsYctKNhNu4Mr8X75d7pXfNxW4J9UzU2QvHbRNfuB9uuOjU9y4SLvpAA4ZxpFSFqpb9m2wyadiX1etSYLMn6LoByRR/HZJIF39ZhyRBhDjfs=
+      file: "$TRAVIS_BUILD_DIR/android/app/build/outputs/apk/app-release-unsigned.apk"
+      on:
+        repo: ImaMonsta/react-native-app
