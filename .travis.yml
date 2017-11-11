@@ -8,5 +8,14 @@ matrix:
         - brew upgrade node
         - npm install -g react-native-cli
     - language: android
-      os: linux
-      jdk: oraclejdk7
+      android:
+        components:
+          - tools
+          - platform-tools
+          - tools
+
+          # The BuildTools version used by your project
+          - build-tools-25.0.0
+
+          # The SDK version used to compile your project
+          - android-25
