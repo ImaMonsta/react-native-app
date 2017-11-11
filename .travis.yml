@@ -24,6 +24,7 @@ matrix:
     script:
     - echo "Travis branch is $TRAVIS_BRANCH"
     - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
+    - ls $TRAVIS_BUILD_DIR/android/app/build/outputs/apk
     deploy:
       provider: releases
       api_key:
